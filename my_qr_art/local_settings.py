@@ -10,7 +10,7 @@ SECRET_KEY = 'n_!=%bx3=^o0t4df^cmd5%$5d-8d%_vgmdcwq-ia7be4g=1zf0'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['qr.jala.club']
+ALLOWED_HOSTS = ['*']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/

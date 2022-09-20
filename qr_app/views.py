@@ -25,6 +25,7 @@ import datetime
 import json
 import base64
 import secrets
+import os
 
 import qr_app.qrmap as qrmap
 from .forms import CreateQRForm
@@ -91,7 +92,7 @@ def create_qr_from_array(request):
         if 'errorCorrectionLevel' in request.POST:
             error = request.POST['errorCorrectionLevel']
 
-        urlPrefix = 'HTTPS://MY-QR.ART/R'
+        urlPrefix = os.environ.get('URL_PREFIX')
         if 'customUrlPrefix' in request.POST:
             urlPrefix = request.POST['customUrlPrefix'].upper()
 

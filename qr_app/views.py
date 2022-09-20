@@ -92,7 +92,7 @@ def create_qr_from_array(request):
         if 'errorCorrectionLevel' in request.POST:
             error = request.POST['errorCorrectionLevel']
 
-        urlPrefix = os.environ.get('URL_PREFIX')
+        urlPrefix = 'https://QR.JALA.CLUB/R'
         if 'customUrlPrefix' in request.POST:
             urlPrefix = request.POST['customUrlPrefix'].upper()
 
